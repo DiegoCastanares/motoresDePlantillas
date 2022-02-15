@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Kindle",
+    "price": "199.99",
+    "thumbnail": "https://m.media-amazon.com/images/I/61eGz0e6N+L._AC_UL640_FMwebp_QL65_.jpg",
+    "id": 1
+  },
+  {
+    "title": "kindle2",
+    "price": "233.90",
+    "thumbnail": "https://m.media-amazon.com/images/I/61vE5CAZ2qL._AC_UL640_FMwebp_QL65_.jpg",
+    "id": 2
+  },
+  {
+    "title": "kindle3",
+    "price": "123.85",
+    "thumbnail": "https://m.media-amazon.com/images/I/61vE5CAZ2qL._AC_UL640_FMwebp_QL65_.jpg",
+    "id": 3
+  }
+]

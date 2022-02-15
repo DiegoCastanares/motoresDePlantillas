@@ -1,0 +1,23 @@
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+body
+  if products 
+    h1.text-center.mt-5 Listado de Productos
+    .row.justify-content-center
+     a.btn.btn-secondary.mt-2.col-2(href='./') Ir al formulario de carga
+    .d-flex.flex-wrap.justify-content-center
+        each product in products
+              .card.m-5.border-0(style= 'width: 18rem;')
+                img.card-img-top(src=product.thumbnail, alt=product.title)
+                .card-body
+                  h5.card-title.text-center !{product.title}
+                  p.card-text.text-center !{product.price}
+  else
+      h2.text-center.my-5 No hay productos
+
+
